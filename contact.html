@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja" class="sub">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ｜株式会社REBORN BASE</title>
+<meta name="description" content="工事のご依頼、お見積り、採用のご相談はこちらから。">
+<meta property="og:title" content="お問い合わせ｜株式会社REBORN BASE">
+<meta property="og:description" content="工事のご依頼、お見積り、採用のご相談はこちらから。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@500;700&family=Inter:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sub">
+<svg width="0" height="0" style="position:absolute"><symbol id="logo" viewBox="0 0 240 120">
+<rect x="6" y="30" width="60" height="60" fill="none" stroke="#333" stroke-width="2.5"/><rect x="30" y="10" width="14" height="100" fill="#333"/>
+<text x="84" y="64" font-family="'Shippori Mincho B1',serif" font-size="30" font-weight="700" fill="#333" letter-spacing="2">REBORN</text>
+<text x="84" y="98" font-family="'Shippori Mincho B1',serif" font-size="30" font-weight="700" fill="#333" letter-spacing="2">BASE</text></symbol></svg>
+<header>
+  <a class="site_logo" href="index.html"><small>株式会社</small><strong>REBORN BASE</strong><span>キッチン・住宅設備 取付工事</span><span class="bar"></span></a>
+  <button class="burger" aria-expanded="false" aria-controls="gnavi" onclick="const m=document.getElementById('gnavi');m.classList.toggle('open');this.setAttribute('aria-expanded',m.classList.contains('open'))">MENU</button>
+  <nav class="g_navi" id="gnavi"><a href="about.html">REBORN BASEについて</a><a href="works.html">施工実績</a><a href="recruit.html">採用情報</a><a href="contact.html" class=on>お問い合わせ</a></nav>
+  <ul class="cv">
+    <li class="tel"><a href="tel:09069206139"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>090-6920-6139</a></li>
+    <li class="mail"><a href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>お問い合わせ</a></li>
+  </ul>
+</header>
+<div class="wrapper">
+  <div class="page_head"><div class="crumb"><a href="index.html">HOME</a> › お問い合わせ</div><h1 class="jp"><small>CONTACT</small>お問い合わせ</h1><p>工事のご依頼、お見積り、採用のご相談はこちらから。</p></div>
+
+  <section class="inner">
+    <div class="contact_grid">
+      <div class="c_card">
+        <h3>お電話</h3>
+        <div class="big">090-6920-6139</div>
+        <p>現場作業中は出られないことがあります。<br>留守番電話にお名前を残していただければ、折り返しご連絡します。</p>
+        <a class="btn" href="tel:09069206139">電話をかける</a>
+      </div>
+      <div class="c_card">
+        <h3>メール</h3>
+        <div class="big" style="font-size:2rem">info@reborn-base.co.jp</div>
+        <p>図面（PDF・写真）を添付いただけるとスムーズです。<br>原則、当日中にお返事します。</p>
+        <a class="btn" href="mailto:info@reborn-base.co.jp?subject=工事のご依頼">メールを送る</a>
+      </div>
+    </div>
+    <div class="form_wrap">
+      <!-- Googleフォームができたら、ここに埋め込みコード（iframe）を貼る -->
+      <div class="form_note">お問い合わせフォームは準備中です。<br>それまでは上記のお電話・メールからご連絡ください。</div>
+    </div>
+  </section>
+  <footer>
+    <div><strong>株式会社REBORN BASE</strong>東京都中央区銀座1丁目12-4 N&amp;E BLD. 6F<br><nav style="margin-top:10px"><a href="about.html">REBORN BASEについて</a><a href="works.html">施工実績</a><a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a></nav></div>
+    <div>© 2026 REBORN BASE Inc.</div>
+  </footer>
+</div>
+<script>
+(function(){
+  var header=document.querySelector('header');
+  var items=[].slice.call(document.querySelectorAll('.works .main, .works .sub'));
+  var kvArea=document.querySelector('.kv_area'), copy=document.querySelector('.copy_h'), copys=document.querySelector('.copy_s');
+  function onScroll(){
+    var y=window.pageYOffset, h=window.innerHeight;
+    if(kvArea){var black=y>h*0.7-300;header.classList.toggle('black',black);kvArea.classList.toggle('fade',black);copy.classList.toggle('move',y>h);if(copys)copys.classList.toggle('move',y>h);}
+    items.forEach(function(el){if(!el.classList.contains('show')&&el.getBoundingClientRect().top<h-100)el.classList.add('show');});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);onScroll();
+})();
+</script>
+</body></html>
