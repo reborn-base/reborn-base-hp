@@ -30,8 +30,8 @@ header{position:fixed;left:0;top:0;width:var(--nav);height:100%;z-index:100;disp
 .site_logo .bar{width:20px;height:1px;background:currentColor;margin:34px 0 26px}
 .home header .site_logo,.home header .g_navi{filter:brightness(1000%);transition:.6s ease-in}
 .home header.black .site_logo,.home header.black .g_navi{filter:brightness(100%)}
-.g_navi{padding:0 40px;flex:1}
-.g_navi a{display:block;font-size:1.4rem;padding:7px 0;letter-spacing:.06em;transition:.3s}
+.g_navi{padding:0 28px 0 40px;flex:1}
+.g_navi a{display:block;font-size:1.4rem;padding:7px 0;letter-spacing:.02em;white-space:nowrap;transition:.3s}
 .g_navi a:hover,.g_navi a.on{color:var(--navy2)}
 .cv{margin-top:auto}
 .cv li a{display:flex;align-items:center;gap:30px;height:80px;padding:0 24px;font-size:1.5rem;letter-spacing:.06em}
@@ -112,7 +112,7 @@ header{position:fixed;left:0;top:0;width:var(--nav);height:100%;z-index:100;disp
 .works .txt p{font-size:1.5rem}
 .works .tag{margin-top:18px;font-size:1.3rem;color:var(--navy)}
 .works .tag span+span{margin-left:16px}
-.works .spec{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:22px}
+.works .spec{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:22px}
 .works .spec div{background:#fff;padding:12px 14px}
 .works .spec dt{font-size:1.1rem;color:var(--navy);letter-spacing:.1em}
 .works .spec dd{font-size:1.5rem;font-weight:500}
