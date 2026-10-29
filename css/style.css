@@ -99,6 +99,10 @@ header{position:fixed;left:0;top:0;width:var(--nav);height:100%;z-index:100;disp
 .works ul.pickup>li:first-child{padding-top:0}
 .works .flex{display:grid;grid-template-columns:1fr 280px;gap:92px}
 .works .main{display:flex;flex-direction:column-reverse}
+.works .flex.solo{grid-template-columns:1fr}
+.works .solo .main{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}
+.works .solo .main .img{order:-1}
+.works .solo .txt{padding-top:0}
 .works .main .img,.works .sub span{position:relative;display:block;overflow:hidden;background:#44443f}
 .works .main .img{aspect-ratio:3/2}
 .works .sub span{aspect-ratio:5/4}
@@ -208,6 +212,7 @@ footer nav a:hover{color:var(--navy)}
 .exp_list li{border-top:1px solid var(--line);padding:22px 0;font-size:1.4rem;line-height:1.9;color:#555}
 .exp_list b{display:block;font-size:1.9rem;font-weight:500;color:var(--black);margin-bottom:6px}
 @media (max-width:959px){
+  .works .solo .main{grid-template-columns:1fr;gap:24px}
   .exp_list{grid-template-columns:1fr}
   .day{margin-left:12px}.day li{grid-template-columns:1fr;gap:4px;padding-left:22px}.grid3{grid-template-columns:1fr}
   :root{--nav:0px}
