@@ -181,6 +181,10 @@ footer{padding:48px 96px;border-top:2px solid var(--navy);display:flex;justify-c
 footer strong{display:block;font-family:var(--min);font-size:1.8rem;color:var(--ink);margin-bottom:6px}
 footer nav a{margin-right:18px}
 footer nav a:hover{color:var(--navy)}
+.sns_link{display:inline-flex;align-items:center;gap:6px;color:var(--navy);font-weight:500;margin-right:20px}
+.sns_link svg{width:18px;height:18px}
+.sns_note{margin-top:28px;font-size:1.4rem}
+.sns_note .sns_link{margin-right:2px}
 
 @media (prefers-reduced-motion:reduce){
   .kv .kv_list{transition:none;transform:none}
