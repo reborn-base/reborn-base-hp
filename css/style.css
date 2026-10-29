@@ -208,7 +208,13 @@ footer nav a:hover{color:var(--navy)}
   .g_navi{display:none;position:absolute;top:60px;left:0;right:0;background:#fff;padding:12px 20px 20px;border-bottom:1px solid var(--line)}
   .g_navi.open{display:block}
   .cv{display:none}
-  .burger{display:block;background:none;border:1px solid var(--navy);color:var(--navy);padding:6px 14px;font-size:1.2rem;letter-spacing:.1em;font-family:inherit;cursor:pointer}
+  .burger{display:block;position:relative;width:44px;height:44px;margin-right:-8px;background:none;border:0;cursor:pointer}
+  .burger span{position:absolute;left:10px;width:24px;height:2px;background:var(--black);transition:transform .3s,opacity .2s,top .3s}
+  .burger span:nth-child(1){top:14px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:28px}
+  .burger[aria-expanded="true"] span:nth-child(1){top:21px;transform:rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){top:21px;transform:rotate(-45deg)}
+  .burger:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
   .kv_area{position:relative;padding-right:0;height:62vh;margin-top:60px}
   .kv_area.fade{filter:none}
   .kv_area.fade .kv_home_list{opacity:1}
