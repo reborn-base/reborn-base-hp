@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://reborn-base.github.io/reborn-base-hp/sitemap.xml
