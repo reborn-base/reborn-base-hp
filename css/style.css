@@ -126,7 +126,7 @@ header{position:fixed;left:0;top:0;width:var(--nav);height:100%;z-index:100;disp
 .works .btn{margin-top:60px}
 
 /* numbers */
-.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin:0 0 80px}
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;margin:0 0 80px;max-width:720px}
 .nums li{border-top:2px solid var(--navy);padding-top:16px}
 .nums b{display:block;font-family:'Inter',sans-serif;font-size:4.2rem;font-weight:700;line-height:1.2;color:var(--black)}
 .nums b small{font-size:1.6rem;font-family:var(--sans);margin-left:4px}
