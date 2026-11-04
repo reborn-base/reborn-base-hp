@@ -176,7 +176,6 @@ dl.tbl dt{color:var(--navy)}
 .c_card .big{font-family:'Inter',sans-serif;font-size:3rem;font-weight:700;color:var(--black);margin:8px 0}
 .c_card p{font-size:1.4rem;color:#666}
 .c_card .btn{margin-top:20px;min-width:0}
-.form_note{padding:60px;text-align:center;color:#777;font-size:1.4rem;background:var(--bg2)}
 
 /* footer */
 footer{padding:48px 96px;border-top:2px solid var(--navy);display:flex;justify-content:space-between;align-items:flex-end;font-size:1.2rem;color:#777}
