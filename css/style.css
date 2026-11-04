@@ -258,5 +258,5 @@ footer nav a:hover{color:var(--navy)}
 .form_wrap iframe{display:block;width:100%;border:0;background:#fff}
 .form_note{font-size:1.3rem;color:#666;margin:0 0 20px}
 .form_note a{color:var(--navy);text-decoration:underline}
-.f_koji{height:2000px}.f_saiyo{height:1750px}
-@media (max-width:959px){.form_wrap{margin-top:56px}.f_koji{height:2450px}.f_saiyo{height:2150px}}
+.f_koji{height:2000px}.f_saiyo{height:1900px}
+@media (max-width:959px){.form_wrap{margin-top:56px}.f_koji{height:2450px}.f_saiyo{height:2330px}}
