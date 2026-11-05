@@ -262,3 +262,11 @@ footer nav a:hover{color:var(--navy)}
 @media (max-width:959px){.form_wrap{margin-top:56px}.f_koji{height:2450px}.f_saiyo{height:2420px}}
 .bath .tbl{max-width:760px}
 .bath_lead{max-width:640px;margin:0 0 32px}
+
+.genba{background:var(--bg2)}
+.genba_list{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.genba_list img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;margin-bottom:16px}
+.genba_list b{display:block;font-size:1.6rem;margin-bottom:8px}
+.genba_list p{font-size:1.35rem;line-height:2}
+@media (max-width:959px){.genba_list{grid-template-columns:1fr 1fr;gap:24px 16px}}
+@media (max-width:559px){.genba_list{grid-template-columns:1fr}}
