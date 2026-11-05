@@ -260,3 +260,5 @@ footer nav a:hover{color:var(--navy)}
 .form_note a{color:var(--navy);text-decoration:underline}
 .f_koji{height:2000px}.f_saiyo{height:1900px}
 @media (max-width:959px){.form_wrap{margin-top:56px}.f_koji{height:2450px}.f_saiyo{height:2330px}}
+.bath .tbl{max-width:760px}
+.bath_lead{max-width:640px;margin:0 0 32px}
