@@ -324,3 +324,12 @@ footer nav a:hover{color:var(--navy)}
 .pv_item ul{list-style:disc;padding-left:1.4em;margin-top:6px}
 .pv_date{margin-top:32px;font-size:1.3rem;color:#777;text-align:right}
 footer nav a:last-child{color:#999}
+/* top: mini team */
+.mini_team{display:flex;align-items:center;gap:18px;margin-top:28px;padding:14px 18px 14px 14px;border:1px solid var(--line);background:#fff;max-width:420px;transition:.3s}
+.mini_team:hover{border-color:var(--navy)}
+.mt_ph{display:flex;flex:none}
+.mt_ph img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid #fff}
+.mt_ph img+img{margin-left:-12px}
+.mt_tx{font-size:1.4rem;line-height:1.6}
+.mt_tx small{display:block;font-size:1.15rem;color:var(--navy);letter-spacing:.1em}
+.recruit .mini_team+.btn{margin-top:24px}
