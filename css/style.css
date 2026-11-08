@@ -304,3 +304,23 @@ footer nav a:hover{color:var(--navy)}
 .msg_txt>p.quote{margin-top:28px;padding-left:20px;border-left:1px solid var(--ink);font-size:1.7rem;line-height:2;color:var(--ink)}
 .msg.co+.member{margin-top:72px}
 @media (max-width:959px){.msg .co_name{font-size:2.2rem}.msg.co+.member{margin-top:48px}}
+
+/* SP fixed bar */
+.sp_bar{display:none}
+@media (max-width:959px){
+  .sp_bar{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:200;background:#fff;border-top:1px solid var(--line);padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));gap:8px;box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+  .sp_bar a{display:flex;align-items:center;justify-content:center;gap:8px;height:50px;font-size:1.5rem;font-weight:700;letter-spacing:.06em}
+  .sp_bar svg{width:18px;height:18px}
+  .sp_tel{border:1px solid var(--black);color:var(--black)}
+  .sp_main{background:var(--navy);color:#fff}
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
+}
+/* privacy */
+.privacy{max-width:880px}
+.privacy_lead{font-size:1.5rem;line-height:2.2;margin-bottom:48px}
+.pv_item{border-top:1px solid var(--line);padding:28px 0}
+.pv_item h2{font-size:1.9rem;font-weight:500;margin-bottom:12px}
+.pv_item div{font-size:1.45rem;line-height:2.1}
+.pv_item ul{list-style:disc;padding-left:1.4em;margin-top:6px}
+.pv_date{margin-top:32px;font-size:1.3rem;color:#777;text-align:right}
+footer nav a:last-child{color:#999}
