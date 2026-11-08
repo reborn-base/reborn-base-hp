@@ -270,3 +270,37 @@ footer nav a:hover{color:var(--navy)}
 .genba_list p{font-size:1.35rem;line-height:2}
 @media (max-width:959px){.genba_list{grid-template-columns:1fr 1fr;gap:24px 16px}}
 @media (max-width:559px){.genba_list{grid-template-columns:1fr}}
+
+/* team / message */
+.msg{display:grid;grid-template-columns:320px 1fr;gap:64px;align-items:start;max-width:1040px}
+.msg_ph{margin:0}
+.msg_ph img,.member img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block}
+.msg_lead{font-size:2.6rem;line-height:1.7;letter-spacing:.08em;margin-bottom:28px}
+.msg_txt>p:not(.msg_lead){font-size:1.5rem;line-height:2.2}
+.msg_txt>p+p{margin-top:1.1em}
+.msg_txt .sign{margin-top:32px;font-size:1.3rem;color:#777}
+.msg_txt .sign b{display:block;font-size:2.2rem;font-weight:500;color:var(--black);letter-spacing:.12em;margin-top:4px}
+.team_h{margin-top:120px}
+.member{display:grid;grid-template-columns:repeat(2,1fr);gap:48px;max-width:1040px}
+.member li{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.member figure{margin:0}
+.member .mono{aspect-ratio:4/5;background:#f0f0ee;display:flex;align-items:center;justify-content:center}
+.member .mono span{font-size:6.4rem;color:#9a9a96}
+.member small{display:block;font-size:1.2rem;color:var(--navy);letter-spacing:.12em;margin-bottom:4px}
+.member b{display:block;font-size:2.2rem;font-weight:500;letter-spacing:.1em;margin-bottom:10px}
+.member p{font-size:1.4rem;line-height:2;color:#555}
+@media (max-width:959px){
+  .msg{grid-template-columns:1fr;gap:28px}
+  .msg_ph{max-width:260px}
+  .msg_lead{font-size:2.2rem}
+  .team_h{margin-top:80px}
+  .member{grid-template-columns:1fr;gap:36px}
+  .member li{grid-template-columns:120px 1fr;gap:18px}
+  .member .mono span{font-size:4.4rem}
+}
+.msg.co{margin-top:0}
+.msg .role{display:block;font-size:1.2rem;color:var(--navy);letter-spacing:.12em;margin-bottom:6px}
+.msg_txt>p.co_name{font-size:2.6rem;letter-spacing:.12em;line-height:1.5;margin-bottom:24px}
+.msg_txt>p.quote{margin-top:28px;padding-left:20px;border-left:1px solid var(--ink);font-size:1.7rem;line-height:2;color:var(--ink)}
+.msg.co+.member{margin-top:72px}
+@media (max-width:959px){.msg .co_name{font-size:2.2rem}.msg.co+.member{margin-top:48px}}
