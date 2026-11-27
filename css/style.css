@@ -303,7 +303,8 @@ footer nav a:hover{color:var(--navy)}
 .msg_txt>p.co_name{font-size:2.6rem;letter-spacing:.12em;line-height:1.5;margin-bottom:24px}
 .msg_txt>p.quote{margin-top:28px;padding-left:20px;border-left:1px solid var(--ink);font-size:1.7rem;line-height:2;color:var(--ink)}
 .msg.co+.member{margin-top:72px}
-@media (max-width:959px){.msg .co_name{font-size:2.2rem}.msg.co+.member{margin-top:48px}}
+.msg.co+.msg.co{margin-top:72px}
+@media (max-width:959px){.msg .co_name{font-size:2.2rem}.msg.co+.member,.msg.co+.msg.co{margin-top:48px}}
 
 /* SP fixed bar */
 .sp_bar{display:none}
